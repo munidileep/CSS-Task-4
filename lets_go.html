@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 1</title>
+    <!-- <link rel="stylesheet" href="info.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .srch{
+            width: auto;
+            height: auto;
+        }
+        .src1{
+            position: relative;
+            top: 15px;
+            left: 12px;
+            bottom: 15px;
+            border: 3px solid black;
+            /* border-radius: 20px; */
+            height: 20vh;
+            width: 98%;
+            display: flex;
+            background-color: rgb(127, 254, 0);
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .src1 p{
+            width: 60%;
+            font-size: 60px;
+            color: rgb(24, 117, 121);
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 50px;
+            text-shadow: 
+                2px 2px 0px #000000,
+                -2px 2px 0px #000,
+                2px -2px 0px #ffffff,
+                -2px -2px 0px #fffefe;
+            /* border: 2px solid; */
+        }
+        .src1 ul{
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid; */
+            font-size: 35px;
+            font-weight:bold;
+        }
+        .src1 li{
+            /* height: 6vh; */
+            /* width: 20%; */
+            border: 4px solid black;
+            background-color: aqua;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .src1 ul a{
+            height: 6vh;
+            width: 29%;
+            color: green;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .src1 li:hover{
+            cursor: pointer;
+            background-color: yellow;
+            text-shadow: 
+                1px 1px 0px #ffffff,
+                -1px 1px 0px #000,
+                1px -1px 2px #ffffff,
+                -1px -1px 2px #fffdfd;
+        }
+        .src1 li a:hover{
+            cursor: pointer;
+            color: #000;
+        }
+        .src2{
+            background-image: url(backgrnd.webp);
+            height: auto;
+            width: auto;
+            background-attachment: fixed;
+        }
+        .src2{
+            display: flex;
+            position: relative;
+            top: 40px;
+            left: 12px;
+            bottom: 15px;
+            border: 3px solid black;
+            height: 30vh;
+            width: 98%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 20px; */
+        }
+        .src2 p:hover{
+            color: aliceblue;
+            border: 3px solid aliceblue;
+            background-color: transparent;
+        }
+        .src2 p{
+            border: #000 solid;
+            height: 7vh;
+            width: 35vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 33px;
+            font-weight: bold;
+            background-color: aliceblue;
+            color: rgb(13, 101, 13);
+            /* border-radius: 15px; */
+        }
+        .lets1{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            position: relative;
+            top: 70px;
+            left: 12px;
+            /* bottom: 15px; */
+            /* border: 3px solid black; */
+            height: 80vh;
+            width: 80%;
+            margin: auto;
+            gap: 50px;
+        }
+        .lets1 p{
+            float: left;
+            font-size: 20px;
+            width: 60%;
+            /* position: relative;
+            bottom: 135px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+        }
+        .lets1 img{
+            float: right;
+            height: 70%;
+            width: 60%;
+            border: 7px solid green;
+            border-radius: 20px;
+        }
+        .let2{
+            height: 80vh;
+            width: 80%;
+            margin: auto;
+            /* border: 4px solid; */
+            display: flex;
+            align-items: center;
+            position: relative;
+            /* top: 100px; */
+            left: 12px;
+            /* bottom: 15px; */
+            gap: 50px;
+        }
+        .let2 img{
+            float: left;
+            height: 57%;
+            width: 35%;
+            border: 7px solid green;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .let2 p{
+            float: right;
+            font-size: 20px;
+            width: 60%;
+            /* position: relative;
+            bottom: 135px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            
+        }
+        .lets3{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            position: relative;
+            /* top: 0px; */
+            left: 12px;
+            bottom: 55px;
+            /* border: 3px solid black; */
+            height: 80vh;
+            width: 80%;
+            margin: auto;
+            gap: 50px;
+        }
+        .lets3 p{
+            float: left;
+            font-size: 23px;
+            width: 60%;
+            /* position: relative;
+            bottom: 135px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+        }
+        .lets3 img{
+            float: right;
+            height: 70%;
+            width: 60%;
+            border: 7px solid green;
+            border-radius: 20px;
+        }
+        /* .lets4{
+            gap: 50px;
+        } */
+        .hone{
+            /* width: 100%;
+            height: 100%; */
+            /* border: 5px solid; */
+            /* margin: auto; */
+            display: contents;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+        }
+        .lets4 h1{
+            width: 100%;
+            height: 100%;
+            /* border: 5px solid; */
+            /* margin: auto; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+        }
+        .lets4 img{
+            height: 60%;
+            width: 60%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .fot{
+            position: relative;
+            top: 15px;
+            left: 12px;
+            bottom: 15px;
+            /* border: 3px solid black; */
+            /* border-radius: 20px; */
+            height: 20vh;
+            width: 98%;
+            display: flex;
+            /* background-color: rgb(127, 254, 0); */
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .fot ul{
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid; */
+            font-size: 35px;
+            font-weight:bold;
+        }
+        .fot li{
+            /* height: 6vh; */
+            width: 14%;
+            border: 4px solid black;
+            background-color: rgb(192, 255, 255);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .fot ul li a{
+            height: 6vh;
+            width: 100%;
+            color: rgb(139, 109, 52);
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .fot li:hover{
+            cursor: pointer;
+            background-color: rgb(255, 186, 255);
+            text-shadow: 
+                1px 1px 0px #ffffff,
+                -1px 1px 0px #000,
+                1px -1px 2px #ffffff,
+                -1px -1px 2px #fffdfd;
+        }
+        .fot li a:hover{
+            cursor: pointer;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="srch"></div>
+        <div class="src1">
+            <p>Escape From Tech</p>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>  Home  </a></li>
+                <li><a href="information.html"><i class="fa-solid fa-circle-info"></i>  Information  </a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>  Search  </a></li>
+            </ul>
+        </div>
+        <div class="src2">
+            <p class="text-glow">Escape From Technology</p>
+        </div>
+        <div class="lets1">
+            <p>Ryan was scrolling down his computer. Ryan couldn't find those new headphones he really wanted. He enjoyed scrolling down online shopping, it was much easier than going in person to shop. And there's more stock online! He finally found the headphones he really wanted. No, needed. He needed these headphones. Before he could click the buy button, he noticed an ad on the side of the website. <br>
+
+                <br> "DOWNLOAD THIS NEW GAME! AMAZING WORLD, WHERE ALL YOUR DREAMS COME TRUE!" <br>
+                
+               <br> The ad read. Ryan clicked on the ad, it was very enticing and he was pretty bored. He had finished all the other games he had played. A download loaded into the computer. An app had covered the shopping tab he had. Soon text appeared. "Please wait a minute to load in."</p>
+            <img src="lets 1.png" alt="error">
+        </div>
+        <div class="let2">
+            <img src="lets 2.png" alt="error">
+            <p>Ryan waited for a bit. But, he couldn't go back to the shopping tab to get those headphones. He pressed the window key to try and open the taskbar at the bottom of the screen. He saw the google chrome icon and tried to move his mouse towards it to click it. But, the cursor wasn't moving? He looked at the mouse, but the mouse wasn't moving either. Then an arm appeared on the mouse out of nowhere! <br>
+
+                <br> Ryan screamed, but it started phasing in and out. Like it was disappearing. Ryan tried moving his own arm. Until he realized it was his own arm! He looked at his other arm and that arm was phasing in and out too! Ryan ran over to the mirror and saw how each one of his body parts, arms, legs, chest, started to phase in and out of reality. Soon, his right arm stopped reappearing. He looked at the computer screen. It read "Loading into the world." and Ryan realized what had happened. <br>
+                
+                <br> His left arm had disappeared and now his right leg. His head was the last to go, along with his consciousness. Soon, Ryan had found himself stuck in the world promised to him.</p>
+        </div>
+        <div class="lets3">
+            <p>When he was back, he could remember. He could see a cave. He could smell fish and he could feel the rocky floor he was lying on. “RYAN” A voice sad. “What.. who are you?” Ryan said, as he got up. He looked around, he was in a cave. There was a stone pillar and a pong, With fish in it. The person said. He was in a jail cell, which was also in the cave. “There’s an electric lock to the right side of this cell, you can get me out of this prison if you manage to break it.” Trent explained, “There’s a couple of wires and you gotta break one of them. Here’s a screwdriver to help you open the lock.” Trent held out a screwdriver.
+                “Why are you in prison?” Ryan asked Trent.
+                “I’ll explain that after you break me out.” Trent promised.
+                “Alright.” Ryan said.</p>
+            <img src="lets 3.jpg" alt="error">
+        </div>
+        <div class="lets4">
+            <h1 class="hone">Ryan breaks the the lock open. He needs help finding </h1>
+            <h1 class="hone">which wire he has to cut, help Ryan!</h1><br>
+            <br><img src="lets 4.png" alt="error"><br>
+           <br> <h1>Which wire should Ryan break?</h1><br>
+        </div>
+        <div class="fot">
+            <ul>
+                <li><a href="game1.html">Brown</a></li>
+                <li><a href="cave.html">Red</a></li>
+                <li><a href="game1.html">Blue</a></li>
+                <li><a href="game1.html">Darkgreen</a></li>
+            </ul>
+        </div>
+</body>

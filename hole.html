@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 4</title>
+    <!-- <link rel="stylesheet" href="info.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .srch{
+            width: auto;
+            height: auto;
+        }
+        .src1{
+            position: relative;
+            top: 15px;
+            left: 12px;
+            bottom: 15px;
+            border: 3px solid black;
+            /* border-radius: 20px; */
+            height: 20vh;
+            width: 98%;
+            display: flex;
+            background-color: rgb(127, 254, 0);
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .src1 p{
+            width: 60%;
+            font-size: 60px;
+            color: rgb(24, 117, 121);
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 50px;
+            text-shadow: 
+                2px 2px 0px #000000,
+                -2px 2px 0px #000,
+                2px -2px 0px #ffffff,
+                -2px -2px 0px #fffefe;
+            /* border: 2px solid; */
+        }
+        .src1 ul{
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid; */
+            font-size: 35px;
+            font-weight:bold;
+        }
+        .src1 li{
+            /* height: 6vh; */
+            /* width: 20%; */
+            border: 4px solid black;
+            background-color: aqua;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .src1 ul a{
+            height: 6vh;
+            width: 29%;
+            color: green;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .src1 li:hover{
+            cursor: pointer;
+            background-color: yellow;
+            text-shadow: 
+                1px 1px 0px #ffffff,
+                -1px 1px 0px #000,
+                1px -1px 2px #ffffff,
+                -1px -1px 2px #fffdfd;
+        }
+        .src1 li a:hover{
+            cursor: pointer;
+            color: #000;
+        }
+        .src2{
+            background-image: url(backgrnd.webp);
+            height: auto;
+            width: auto;
+            background-attachment: fixed;
+        }
+        .src2{
+            display: flex;
+            position: relative;
+            top: 40px;
+            left: 12px;
+            bottom: 15px;
+            border: 3px solid black;
+            height: 30vh;
+            width: 98%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 20px; */
+        }
+        .src2 p:hover{
+            color: aliceblue;
+            border: 3px solid aliceblue;
+            background-color: transparent;
+        }
+        .src2 p{
+            border: #000 solid;
+            height: 7vh;
+            width: 35vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 33px;
+            font-weight: bold;
+            background-color: aliceblue;
+            color: rgb(13, 101, 13);
+            /* border-radius: 15px; */
+        }
+        .a3{
+            /* border: 3px solid; */
+            width: 80%;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .a3 p{
+            float: left;
+            width: 55%;
+            font-size: 25px;
+            position: relative;
+            top: 50px;
+        }
+        .a3 img{
+            float: right;
+            width: 40%;
+            border: 7px solid green;
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            position: relative;
+            top: 170px;
+        }
+        #im1{
+            position: relative;
+            top: 250px;
+            left: 250px;
+        }
+        .a4{
+            position: relative;
+            top: 270px;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+        .a4 p{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .a4 #p1{
+            position: relative;
+            top: 100px;
+            font-size: 50px;
+        }
+        .fot{
+            position: relative;
+            top: 400px;
+            left: 12px;
+            bottom: 15px;
+            /* border: 3px solid black; */
+            /* border-radius: 20px; */
+            height: 20vh;
+            width: 98%;
+            display: flex;
+            /* background-color: rgb(127, 254, 0); */
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .fot ul{
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid; */
+            font-size: 35px;
+            font-weight:bold;
+        }
+        .fot li{
+            /* height: 6vh; */
+            width: 14%;
+            border: 4px solid black;
+            background-color: rgb(66, 98, 157);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .fot ul li a{
+            height: 6vh;
+            width: 100%;
+            color: antiquewhite;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .fot li:hover{
+            cursor: pointer;
+            background-color: rgb(159, 251, 170);
+            text-shadow: 
+                1px 1px 0px #ffffff,
+                -1px 1px 0px #000,
+                1px -1px 2px #ffffff,
+                -1px -1px 2px #fffdfd;
+        }
+        .fot li a:hover{
+            cursor: pointer;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="srch">
+        <div class="src1">
+            <p>Escape From Tech</p>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>  Home  </a></li>
+                <li><a href="information.html"><i class="fa-solid fa-circle-info"></i>  Information  </a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>  Search  </a></li>
+            </ul>
+        </div>
+        <div class="src2">
+            <p class="text-glow">Escape From Technology</p>
+        </div>
+        <div class="a3">
+            <p>You picked up the rock, and saw a button underneath it. Ryan pressed it and the candle pushed forward.
+                "We got the candle." Trent said.
+                "Alright, let's go now." Ryan said.
+                They walked into the cave. Soon enough, they found another wall. Trent followed his candle across the wall and realized it was a crossword. Ryan tripped on something on the floor. Ryan checked down to see what he had tripped on, it was another button. He pressed it and a light turned on. They also saw a hole below the crossword with text.
+            </p>
+            <img src="cave 4.webp" alt="error">
+        </div>
+        <h1>Help Ryan solve the crossword!</h1>
+        <img id="im1" src="cave5.png" alt="error">
+        <div class="a4">
+            <p>(Use a paper in real life. This is just an image.)</p>
+            <p id="p1">What word was number 5?</p>
+        </div>
+        <div class="fot">
+            <ul>
+                <li><a href="game4.html">Ballon</a></li>
+                <li><a href="game4.html">catcus</a></li>
+                <li><a href="last.html">Candle</a></li>
+                <li><a href="game4.html">cabins</a></li>
+            </ul>
+        </div>
+    </div>
+</body>

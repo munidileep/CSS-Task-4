@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 3</title>
+    <!-- <link rel="stylesheet" href="info.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .srch{
+            width: auto;
+            height: auto;
+        }
+        .src1{
+            position: relative;
+            top: 15px;
+            left: 12px;
+            bottom: 15px;
+            border: 3px solid black;
+            /* border-radius: 20px; */
+            height: 20vh;
+            width: 98%;
+            display: flex;
+            background-color: rgb(127, 254, 0);
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .src1 p{
+            width: 60%;
+            font-size: 60px;
+            color: rgb(24, 117, 121);
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 50px;
+            text-shadow: 
+                2px 2px 0px #000000,
+                -2px 2px 0px #000,
+                2px -2px 0px #ffffff,
+                -2px -2px 0px #fffefe;
+            /* border: 2px solid; */
+        }
+        .src1 ul{
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid; */
+            font-size: 35px;
+            font-weight:bold;
+        }
+        .src1 li{
+            /* height: 6vh; */
+            /* width: 20%; */
+            border: 4px solid black;
+            background-color: aqua;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .src1 ul a{
+            height: 6vh;
+            width: 29%;
+            color: green;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .src1 li:hover{
+            cursor: pointer;
+            background-color: yellow;
+            text-shadow: 
+                1px 1px 0px #ffffff,
+                -1px 1px 0px #000,
+                1px -1px 2px #ffffff,
+                -1px -1px 2px #fffdfd;
+        }
+        .src1 li a:hover{
+            cursor: pointer;
+            color: #000;
+        }
+        .src2{
+            background-image: url(backgrnd.webp);
+            height: auto;
+            width: auto;
+            background-attachment: fixed;
+        }
+        .src2{
+            display: flex;
+            position: relative;
+            top: 40px;
+            left: 12px;
+            bottom: 15px;
+            border: 3px solid black;
+            height: 30vh;
+            width: 98%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 20px; */
+        }
+        .src2 p:hover{
+            color: aliceblue;
+            border: 3px solid aliceblue;
+            background-color: transparent;
+        }
+        .src2 p{
+            border: #000 solid;
+            height: 7vh;
+            width: 35vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 33px;
+            font-weight: bold;
+            background-color: aliceblue;
+            color: rgb(13, 101, 13);
+            /* border-radius: 15px; */
+        }
+        .n3{
+            /* border: 3px solid; */
+            position: relative;
+            top: 70px;
+            width: 90%;
+            margin: auto;
+        }
+        .n3 p{
+            float: left;
+            width: 55%;
+            position: relative;
+            top: 120px;
+            font-size: 25px;
+        }
+        .n3 img{
+            position: relative;
+            top: 60px;
+            float: right;
+            width: 40%;
+            border: 7px solid green;
+            border-radius: 20px;
+        }
+        .n4{
+            /* border: 3px solid; */
+            width: 90%;
+            height: 10vh;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            position: relative;
+            top: 200px;
+        }
+        table{
+            margin: auto;
+            position: relative;
+            top: 240px;
+        }
+        tr a{
+            /* border: 2px solid; */
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table tr,th{
+            width: 7vw;
+            height: 14vh;
+            border: 5px outset black;
+            font-size: 20px;
+            background-color: rgb(83, 71, 71);
+            color: #ffffff;
+        }
+        table tr th:hover{
+            background-color: lightgoldenrodyellow;
+        }
+        tr a:hover{
+            color: black;
+        }
+        .ft{
+            height: 35vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="srch">
+        <div class="src1">
+            <p>Escape From Tech</p>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>  Home  </a></li>
+                <li><a href="information.html"><i class="fa-solid fa-circle-info"></i>  Information  </a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>  Search  </a></li>
+            </ul>
+        </div>
+        <div class="src2">
+            <p class="text-glow">Escape From Technology</p>
+        </div>
+        <div class="n3">
+            <p>A small rock started to move out of the wall, a hidden mechanism revealed a candle. Ryan could see the candle, but he couldn't reach it. And neither could Trent. Ryan looked around the cave again, and he noticed the riddle wasn't there anymore.
+                "Maybe, we have to press another rock for the candle." Trent said.
+                "Maybe we don't even need the candle." Ryan said.
+                "No, we need it. Look there" Trent pointed to the side. There was more cave, except it was much darker than where they were.</p>
+            <img src="cave3.jpg" alt="error">
+        </div>
+        <div class="n4">
+            <h1>Help Ryan find the rock!</h1>
+        </div>
+        <table>
+            <tr>
+                <th><a href="game3.html">Rock <br>1</a></th>
+                <th><a href="game3.html">Rock <br>2</a></th>
+                <th><a href="game3.html">Rock <br>3</a></th>
+                <th><a href="game3.html">Rock <br>4</a></th>
+                <th><a href="game3.html">Rock <br>5</a></th>
+                <th><a href="game3.html">Rock <br>6</a></th>
+                <th><a href="game3.html">Rock <br>7</a></th>
+                <th><a href="game3.html">Rock <br>8</a></th>
+            </tr>
+            <tr>
+                <th><a href="game3.html">Rock <br>9</a></th>
+                <th><a href="game3.html">Rock <br>10</a></th>
+                <th><a href="game3.html">Rock <br>11</a></th>
+                <th><a href="game3.html">Rock <br>12</a></th>
+                <th><a href="game3.html">Rock <br>13</a></th>
+                <th><a href="game3.html">Rock <br>14</a></th>
+                <th><a href="hole.html">Rock <br>15</a></th>
+                <th><a href="game3.html">Rock <br>16</a></th>
+            </tr>  
+        </table>
+        <div class="ft"></div>
+    </div>
+</body>

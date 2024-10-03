@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <!-- <link rel="stylesheet" href="info.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .info{
+            width: auto;
+            height: auto;
+        }
+        .inf1{
+            position: relative;
+            top: 15px;
+            left: 12px;
+            bottom: 15px;
+            border: 3px solid black;
+            /* border-radius: 20px; */
+            height: 20vh;
+            width: 98%;
+            display: flex;
+            background-color: rgb(127, 254, 0);
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .inf1 p{
+            width: 60%;
+            font-size: 60px;
+            color: rgb(24, 117, 121);
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 50px;
+            text-shadow: 
+                2px 2px 0px #000000,
+                -2px 2px 0px #000,
+                2px -2px 0px #ffffff,
+                -2px -2px 0px #fffefe;
+            /* border: 2px solid; */
+        }
+        .inf1 ul{
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid; */
+            font-size: 35px;
+            font-weight:bold;
+        }
+        .inf1 li{
+            /* height: 6vh; */
+            /* width: 20%; */
+            border: 4px solid black;
+            background-color: aqua;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .inf1 ul a{
+            height: 6vh;
+            width: 29%;
+            color: green;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .inf1 li:hover{
+            cursor: pointer;
+            background-color: yellow;
+            text-shadow: 
+                1px 1px 0px #ffffff,
+                -1px 1px 0px #000,
+                1px -1px 2px #ffffff,
+                -1px -1px 2px #fffdfd;
+        }
+        .inf1 li a:hover{
+            cursor: pointer;
+            color: #000;
+        }
+        .inf2{
+            background-image: url(backgrnd.webp);
+            height: auto;
+            width: auto;
+            background-attachment: fixed;
+        }
+        .inf2{
+            display: flex;
+            position: relative;
+            top: 40px;
+            left: 12px;
+            bottom: 15px;
+            border: 3px solid black;
+            height: 30vh;
+            width: 98%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 20px; */
+        }
+        .inf2 p:hover{
+            color: aliceblue;
+            border: 3px solid aliceblue;
+            background-color: transparent;
+        }
+        .inf2 p{
+            border: #000 solid;
+            height: 7vh;
+            width: 35vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 33px;
+            font-weight: bold;
+            background-color: aliceblue;
+            color: rgb(13, 101, 13);
+            /* border-radius: 15px; */
+        }
+        .inf3{
+            position: relative;
+            top: 70px;
+            left: 13px;
+            bottom: 15px;
+            width: 98%;
+            height: 140vh;
+            border: 3px solid white;
+            background-image: linear-gradient(Aquamarine,MediumTurquoise,Cornflowerblue,slateblue,lightblue,aliceblue);
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .inf3 li{
+            position: relative;
+            top: 27px;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        .inf3 h1{
+            position: relative;
+            top: 27px;
+            font-size: 50px;
+        }
+     </style>
+</head>
+<body>
+    <div class="info"></div>
+        <div class="inf1">
+            <p>Escape From Tech</p>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>  Home  </a></li>
+                <li><a href="information.html"><i class="fa-solid fa-circle-info"></i>  Information  </a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>  Search  </a></li>
+            </ul>
+        </div>
+        <div class="inf2">
+            <p class="text-glow">Escape From Technology</p>
+        </div>
+        <div class="inf3">
+            <br>
+            <h1>CREDITS</h1>
+            <br>
+            <ul>
+                <li>- Code Olympic for bringing this website to birth.</li>
+                <li>- My CodeYoung Teacher, Miss Kawaljeet.</li>
+                <li>- My Hands.</li>
+            </ul>
+            <br>
+            <img src="Hands.png" alt="error">
+            <br>
+            <h1>Answer to puzzels:</h1>
+            <br>
+            <ul>
+                <li>Puzzle One: <b> "Wires" </b>; You needed to cut the Red Wire.</li>
+                <li>Puzzle Two: <b> "Cave Riddle" </b>; A Candle is tall when it's young and short when it's old.</li>
+                <li>Puzzle Three: <b> "Rock Finder" </b> ; Number 15 was the right rock. It had a slightly different color.</li>
+                <li>Puzzle Four: <b> "Crosswords" </b>; Candle was the right answer once again.</li>
+                <li>Puzzle Five: <b> "Escape" </b>; The future was the answer. If you got it, you saved Ryan's future!
+                </li>
+            </ul>
+        </div>
+</body>
+</html>
